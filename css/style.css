@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* CSS Variables */
 :root {
   --navbar-height: 59px;
@@ -13,8 +17,8 @@
 #navbar {
   display: flex;
   align-items: center;
-  position: relative;
-  top: 0;
+  position: sticky;
+  top: 0px;
 }
 #navbar::before {
   content: "";
@@ -34,7 +38,7 @@
 }
 #logo img {
   height: 59px;
-  margin: 3px 65px;
+  margin: 3px 6px;
 }
 
 /* Navigation Bar: List Styling */
@@ -64,7 +68,7 @@
   display: flex;
   flex-direction: column;
   padding: 3px 200px;
-  height: 707px;
+  height: 550px;
   justify-content: center;
   align-items: center;
 }
@@ -72,7 +76,7 @@
   content: "";
   position: absolute;
   background: url("../bg1.jpg") no-repeat center center/cover;
-  height: 100%;
+  height: 600px;
   width: 100%;
   top: 0px;
   left: 0px;
@@ -87,7 +91,7 @@
 #home p {
   color: white;
   text-align: center;
-  font: size 1.5rem;
+  font-size: 1.5rem;
   font-family: "Bree Serif", serif;
 }
 
@@ -99,9 +103,10 @@
 #services .box {
   border: 2px solid brown;
   padding: 34px;
-  margin: 3px 6px;
+  margin: 2px 55px;
   border-radius: 28px;
   background: #f2f2f2;
+  margin-bottom: 20px;
 }
 #services .box img {
   height: 160px;
@@ -110,15 +115,11 @@
 }
 #services .box p {
   font-family: "Bree Serif", serif;
-  height: 160px;
-  margin: auto;
-  display: block;
 }
 
 /* Client Section */
 #client-section {
   position: relative;
-  height: 344px;
 }
 #client-section::before {
   content: "";
